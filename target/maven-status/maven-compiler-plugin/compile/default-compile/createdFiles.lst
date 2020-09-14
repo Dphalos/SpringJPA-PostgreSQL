@@ -1,0 +1,5 @@
+com\springjpa\model\Customer.class
+com\springjpa\webAppController\WebAppController.class
+com\springjpa\controller\WebController.class
+com\springjpa\repo\CustomerRepository.class
+com\springjpa\SpringJpaPostgreSqlApplication.class

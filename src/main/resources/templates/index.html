@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+  <title>Demo</title>
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div id="map"></div>
+  <!-- Buttons to change layers
+<button id=" defaultMap">Empty</button >
+    <button id="transportMap">Public Transport</button>
+    <button id="roadsMap">Roads</button> -->
+  <!--Checkboxes to change layers-->
+  <form action="/action_page.php">
+    <input type="checkbox" id="transportCheck" name="transportCheck" value="1" />
+    <label for="transportCheck"> Public Transport</label><br />
+
+    <input type="checkbox" id="roadsCheck" name="roadsCheck" value="2" />
+    <label for="roadsCheck"> Roads</label><br />
+
+    <input type="checkbox" id="buildingsCheck" name="buildingsCheck" value="2" />
+    <label for="buildingsCheck"> Buildings</label><br />
+
+    <input type="checkbox" id="landuseCheck" name="landuseCheck" value="2" />
+    <label for="landuseCheck"> Landuse</label><br />
+
+    <input type="checkbox" id="naturalCheck" name="naturalCheck" value="2" />
+    <label for="naturalCheck"> Natural</label><br />
+
+    <input type="checkbox" id="pofwCheck" name="pofwCheck" value="2" />
+    <label for="pofwCheck"> Point of Worship</label><br />
+
+    <input type="checkbox" id="railwaysCheck" name="railwaysCheck" value="2" />
+    <label for="railwaysCheck"> Railways</label><br />
+
+    <input type="checkbox" id="trafficCheck" name="trafficCheck" value="2" />
+    <label for="trafficCheck"> Traffic</label><br />
+
+    <input type="checkbox" id="waterbodyCheck" name="waterbodyCheck" value="2" />
+    <label for="waterbodyCheck"> Waterbody</label><br />
+
+    <input type="checkbox" id="waterwaysCheck" name="waterwaysCheck" value="2" />
+    <label for="waterwaysCheck"> Waterways</label><br />
+
+    <input type="checkbox" id="placesCheck" name="placesCheck" value="3" />
+    <label for="placesCheck"> Places</label><br />
+
+    <input type="checkbox" id="poisCheck" name="poisCheck" value="4" />
+    <label for="poisCheck"> Point of Interests</label><br /><br />
+  </form>
+
+  <!--Drawing -->
+  <form class="form-inline">
+    <label>Geometry type &nbsp;</label>
+    <select id="type">
+      <option value="Point">Point</option>
+      <option value="LineString">LineString</option>
+      <option value="Polygon">Polygon</option>
+      <option value="Circle">Circle</option>
+    </select>
+  </form>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
+
+
+

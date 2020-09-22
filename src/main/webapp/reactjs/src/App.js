@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import Openmap from './components/Openmap';
+import Openmap from "./components/Openmap";
 
 function App() {
   return (
     <div className="App">
-      <Openmap/>
+      <Openmap />
     </div>
   );
 }

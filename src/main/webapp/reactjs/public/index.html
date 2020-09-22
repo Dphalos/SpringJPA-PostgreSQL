@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,17 +22,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-  crossorigin="anonymous"
-/>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -44,8 +39,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- myCode -->
-     <form action="/action_page.php">
+  <!-- myCode -->
+  <form action="/action_page.php">
     <input type="checkbox" id="transportCheck" name="transportCheck" value="1" />
     <label for="transportCheck"> Public Transport</label><br />
 
@@ -82,6 +77,19 @@
     <input type="checkbox" id="poisCheck" name="poisCheck" value="4" />
     <label for="poisCheck"> Point of Interests</label><br /><br />
   </form>
+  <!-- GEOLOCATION-->
+  <label for="track">
+    track position
+    <input id="track" type="checkbox" />
+  </label>
+  <p>
+    position accuracy : <code id="accuracy"></code>&nbsp;&nbsp;
+    altitude : <code id="altitude"></code>&nbsp;&nbsp;
+    altitude accuracy : <code id="altitudeAccuracy"></code>&nbsp;&nbsp;
+    heading : <code id="heading"></code>&nbsp;&nbsp;
+    speed : <code id="speed"></code>
+  </p>
+
 
   <!--Drawing -->
   <form class="form-inline">
@@ -93,7 +101,8 @@
       <option value="Circle">Circle</option>
     </select>
   </form>
-    <!-- myCodeEnd -->
+  <!-- myCodeEnd -->
   <div id="map"></div>
-  </body>
+</body>
+
 </html>

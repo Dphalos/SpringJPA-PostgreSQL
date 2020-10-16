@@ -21,6 +21,7 @@ import Geometry from "ol/geom/Geometry";
 import TileJSON from "ol/source/TileJSON";
 //Variable imports
 //import {iconX, iconY} from "./VehicleLayer.js";
+//Cesium imports
 
 class Openmap extends React.Component {
   render() {
@@ -368,16 +369,6 @@ class Openmap extends React.Component {
 
     addInteractions();
     // #endregion Draw2
-
-    /*var map = new Map({
-		  layers: [raster, vector],
-		  target: 'map',
-		  view: new View({
-		    center: [0, 0],
-		    zoom: 0,
-		  }),
-		});
-		*/
 
     //BUTTON TYPE LAYER CHANGE
     /*
@@ -732,6 +723,8 @@ class Openmap extends React.Component {
 
     var time = 1;
 
+    //Simulating vehicles moving
+    /*
     var interval = setInterval(function () {
       if (time <= 60) {
         //console.log(time);
@@ -741,10 +734,13 @@ class Openmap extends React.Component {
         clearInterval(interval);
       }
     }, 1000);
+    */
 
     //console.log(iconFeature.getProperties());
 
     //#endregion
+
+    //Cesium
 
     return null;
   }
